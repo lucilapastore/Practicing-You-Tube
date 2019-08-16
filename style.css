@@ -1,0 +1,118 @@
+head, body, footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo {
+    width: 120px; 
+    height: 40px;
+    margin-left: 10px;
+}
+head {
+    display: flex;
+    flex-direction: row;
+    background-color: #b3aaaa;
+}
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.right-icons {
+    display: flex;
+    align-content: flex-end;
+}
+#search-bar {
+    width: 330px;
+}
+.left-icons {
+    display: flex;
+    align-content: flex-start;
+}
+
+body {
+    margin: 20px;
+}
+#box-container {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: blanchedalmond;
+}
+#left-box {
+width: 70%;
+height: 50%;
+flex-direction: column;
+justify-content: space-evenly;
+flex-shrink: 2;
+}
+#container {
+    width: 797px;
+    height: 168px;
+    background-color: rgb(204, 194, 194);
+}
+.video-border {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+.video-information {
+    width: 793px;
+    height: 93px;
+    background-color: rgb(248, 200, 141);
+    padding: 20px 0px 8px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+.video-information #icons {
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+.views {
+    color: #606060;
+    font-weight: bold;
+}
+#sidebar {
+width: 30%;
+height: 50%;
+flex-direction: column;
+flex-shrink: 4s;
+}
+#sidebar #right-box {
+    width: 324px;
+    height: 700px;
+    background-color: #b3aaaa;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.mini-box {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+}
+.mini-box img {
+    width: 168px;
+    height: 94px;
+    flex-shrink: 2;
+}
+.text-video {
+    flex-shrink: 2;
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+    text-align: left;
+    padding: 2px;
+}
+.text-video:hover {
+    color:red;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+}
