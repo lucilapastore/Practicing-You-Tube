@@ -57,7 +57,7 @@ flex-shrink: 2;
     border-width: 1px;
     border-style: solid;
 }
-.video-information {
+#video-information {
     width: 793px;
     height: 93px;
     background-color: rgb(248, 200, 141);
@@ -65,15 +65,31 @@ flex-shrink: 2;
     border-color: black;
     border-width: 2px;
     border-style: solid;
-}
-.video-information #icons {
-    float: right;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
 }
-.views {
+
+#video-information .views {
     color: #606060;
     font-weight: bold;
+}
+.suscribe-button button {
+    width: 170px;
+    height: 36px;
+    background-color: #CC0000;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    align-content: flex-start;
+}
+
+.video-information #icons {
+   
 }
 #sidebar {
 width: 30%;
