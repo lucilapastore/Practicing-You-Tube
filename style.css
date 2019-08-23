@@ -103,8 +103,6 @@ flex-shrink: 2;
     border-radius: 2px;
     border: none;
     cursor: pointer;
-    align-content: flex-start;
-    justify-content: center;
     position: relative;
     box-sizing: border-box;
     font: inherit;
@@ -132,11 +130,15 @@ flex-shrink: 4s;
     height: 120px;
     display: flex;
     flex-direction: row;
+    margin: 0 0 15px 10px;
+    padding: ;
+
 }
 .mini-box img {
     width: 168px;
     height: 94px;
     flex-shrink: 2;
+    cursor: pointer;
 }
 .text-video {
     flex-shrink: 2;
