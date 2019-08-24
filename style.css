@@ -3,57 +3,45 @@
 head, body, footer {
     font-family: 'Roboto', sans-serif;
 }
+
 #logo {
     width: 120px; 
     height: 40px;
     margin-left: 10px;
 }
-head {
-    display: flex;
-    flex-direction: row;
-    background-color: #b3aaaa;
-}
-#nav-bar {
+
+nav {
+    height: 56px;
+    padding: 0 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 5%;
+    justify-content: space-between;
+    margin: 0;
+    border: 0;
+    background: transparent;
 }
-.right-icons {
-    display: flex;
-    align-content: flex-end;
+
+ nav .right-icons {
+    justify-content: flex-end;
 }
-#search-bar {
-    width: 330px;
-}
-.left-icons {
-    display: flex;
-    align-content: flex-start;
+
+nav .left-icons {
+    justify-content: flex-start;
 }
 
 body {
     margin: 20px;
 }
-#box-container {
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    background-color: white;
+
+section {
+    width: 65vw; /*proportion of the column*/
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-shrink: 2;
+    margin: 23px 0 18px 0;
 }
-#left-box {
-width: 70%;
-height: 50%;
-flex-direction: column;
-justify-content: space-evenly;
-flex-shrink: 2;
-}
-#container {
-    width: 797px;
-    height: 168px;
-    background-color: rgb(204, 194, 194);
-}
+
 .video-border {
     border-color: black;
     border-width: 1px;
@@ -62,11 +50,18 @@ flex-shrink: 2;
 
 .video-title {
     font-weight: bold;
+    margin-bottom: -10px;
 }
 
-.views {
+.views-likes {
     color: #606060;
+    background-color: #dbdbdb;
     font-weight: bold;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 793px;
 }
 
 #video-information {
@@ -80,18 +75,24 @@ flex-shrink: 2;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
+
 .user-avatar {
     width: 48px; 
     height: 48px;
-    background: transparent;
+    background-color: transparent;
     margin: 0;
+    margin-left: 15px;
     padding: 0;
     border: 0;
     cursor: pointer;
-    display: block;
+    display: inline-block;
+}
+
+.user-name h4, p {
+    display: inline-flex;
+    margin: -10px;
 }
 
 .suscribe-button button {
@@ -106,18 +107,30 @@ flex-shrink: 2;
     position: relative;
     box-sizing: border-box;
     font: inherit;
+    margin-right: 20px;
 }
 
-.video-information #icons {
-   
+.comments {
+    width: 793px;
+    height: 168px;
+    background-color: rgb(204, 194, 194);
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
-#sidebar {
-width: 30%;
-height: 50%;
-flex-direction: column;
-flex-shrink: 4s;
+
+aside {
+    width: 35vw;
+    display: block;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-shrink: 4;
 }
-#sidebar #right-box {
+
+ #right-box {
     width: 324px;
     height: 700px;
     background-color: #b3aaaa;
@@ -125,21 +138,22 @@ flex-shrink: 4s;
     flex-direction: column;
     box-sizing: border-box;
 }
-.mini-box {
+
+aside .mini-box {
     width: 300px;
     height: 120px;
     display: flex;
     flex-direction: row;
     margin: 0 0 15px 10px;
-    padding: ;
-
 }
+
 .mini-box img {
     width: 168px;
     height: 94px;
     flex-shrink: 2;
     cursor: pointer;
 }
+
 .text-video {
     flex-shrink: 2;
     cursor: pointer;
@@ -149,9 +163,11 @@ flex-shrink: 4s;
     text-align: left;
     padding: 2px;
 }
+
 .text-video:hover {
     color:red;
 }
+
 footer {
     display: flex;
     flex-direction: row;

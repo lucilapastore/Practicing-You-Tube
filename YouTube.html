@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
     <title>YouTube Microverse Proyect</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
 </head>
-
 <body>
-    <nav id="nav-bar">
+    <nav>
         <div class="left-icons">
             <img src="./images/menu-icon.png" alt="">
             <img id="logo" src="./images/logo.png" alt="YouTube logo">
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Write here...">
+            <input type="text" placeholder="Buscar...">
             <button type="submit">Search</button>
         </div>
         <div class="right-icons">
@@ -22,39 +20,37 @@
             <img class="right-icon" src="./images/avatar.png" alt="">
         </div>
     </nav>
-    <div id="box-container">
-        <div id="left-box">
-            <div id="video">
+    <hr>
+        <section>
+            <div class="video">
                 <iframe class="video-border" width="727" height="409" src="https://www.youtube.com/embed/9lavVm00wC4"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <div class="video-title">Perros de la Calle [Lunes 12/08/19] - Programa Completo -
+            <h3 class="video-title">Perros de la Calle [Lunes 12/08/19] - Programa Completo -</h3><br>
+            <div class="views-likes">5.070 visualizaciones
+            <img src="./images/social-icons.png" alt="">
+            </div>
+        </section>
+        <article>
+            <div id="video-information">
+                <div>
+                    <img class="user-avatar"
+                        src="https://yt3.ggpht.com/a/AGF-l7_W4GO6eEVlLIyiSuGuXCYyT02pTnM_3yvCPg=s88-c-k-c0xffffffff-no-rj-mo"
+                        alt="user-avatar">
                 </div>
-                <div class="views">5.070 visualizaciones
+                <div class="user-name">
+                    <h4>Lucio Ortiz</h4><br>
+                    <p>Publicado el 23 ago. 2019</p>
                 </div>
-                <div id="video-information">
-                    <div>
-                        <img class="user-avatar"
-                            src="https://yt3.ggpht.com/a/AGF-l7_W4GO6eEVlLIyiSuGuXCYyT02pTnM_3yvCPg=s88-c-k-c0xffffffff-no-rj-mo"
-                            alt="user-avatar">
-                    </div>
-                    <div>
-                        <div id="icons">
-                        </div>
-                        <div class="suscribe-button">
-                            <button>SUSCRIBIRSE 2,4 MIL</button>
-                        </div>
-                    </div>
-
+                <div class="suscribe-button">
+                    <button>SUSCRIBIRSE 2,4 MIL</button>
                 </div>
             </div>
-            <div id="container">
+            <div class="comments">
                 <p>Aquí van los comentarios</p>
-
             </div>
-        </div>
-
-        <div id="sidebar">
+        </article>
+        <aside>
             <div id="right-box">
                 <div class="mini-box">
                     <img src="./images/video1.png" alt="next video's preview">
@@ -76,11 +72,10 @@
                     <p class="text-video"><b>Relaxing Hawaiian Music</b><br> Lounge Music<br> 6 mil visualizaciones</p>
                 </div>
             </div>
-
-        </div>
-    </div>
-    <footer>
-    </footer>
+        </aside>
+    
+        <footer>
+        </footer>
 </body>
 
 </html>
