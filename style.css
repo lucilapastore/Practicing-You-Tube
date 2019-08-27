@@ -41,6 +41,7 @@ nav {
 
 nav .right-icons {
     justify-content: flex-end;
+    margin-right: 15px;
 }
 
 body {
@@ -53,6 +54,11 @@ main {
     width: 70%; /*proportion of the column*/
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 23px;
+    padding: 0;
+    border: 0; 
 }
 
 .section1 {
@@ -63,9 +69,7 @@ main {
 }
 
 .video-border {
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
+    border:gray 2px solid;
 }
 
 .video-title {
@@ -76,12 +80,22 @@ main {
 .views-likes {
     color: #606060;
     background-color: #dbdbdb;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: bold;
+    padding-left: 15px;
     margin-bottom: 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 793px;
+    border: 1px solid lightgrey;
+}
+
+.views-likes img {
+    justify-content: flex-start;
+    position: relative;
+    left: 135px;
 }
 
 #video-information {
@@ -95,7 +109,6 @@ main {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
-    box-sizing: border-box; 
 }
 
 .user-avatar {
@@ -116,7 +129,7 @@ main {
 }
 
 .suscribe-button button {
-    width: 170px;
+    width: 200px;
     height: 36px;
     background-color: #CC0000;
     color: white;
@@ -143,19 +156,19 @@ main {
 }
 
 aside {
+    position: relative;
     width: 30%;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
     background-color: #b3aaaa;
+    border: solid gray 2px;
 }
 
 .mini-box {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: red;
+    flex-flow: row wrap;
+    padding: 10px;
 }
 
 .next-video { /*contenedor de la imagen*/
@@ -168,25 +181,25 @@ aside {
     width: 100%;
 }
 
-.descripcion-video {
+.description-video {
     width: 70%;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 aside .mini-box .video-title { /*título del video*/
     width: 100%;
-    background-color: blue;
     margin: 0;
     display: block;
+    margin-bottom: 8px;
 }
 .text-video { /* descripción del video*/
     width: 100%;
     cursor: pointer;
-    background-color: pink;
     margin: 0;
     display: block;
-}
 
+}
 
 .text-video:hover {
     color:red;
