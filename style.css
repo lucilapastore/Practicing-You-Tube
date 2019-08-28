@@ -166,12 +166,13 @@ main {
 }
 
 aside {
-    display: block;
+    display: inline-block;
     flex-direction: column;
     background-color: #b3aaaa;
     border: solid gray 2px;
     position: relative;
     top: 26px;
+
 }
 
 .mini-box {
