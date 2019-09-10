@@ -16,12 +16,10 @@
                             <img class="logo" src="./images/logo.png" alt="YouTube logo">
                         </div>
                 </div>
-                    
-                    
-                    <div class="search-bar">
-                        <input type="text" placeholder="Buscar...">
-                        <button type="submit">Search</button>
-                    </div>
+                <form>
+                    <input type="search" name="search" placeholder="Buscar..." class="search-bar">
+                    <input type="submit" value="Buscar" class="bar-button">
+                </form>
                     <div class="right-icons">
                         <img src="./images/right-icons.png" alt="">
                         <img src="./images/avatar.png" alt="">
@@ -43,22 +41,32 @@
         </section>
         <section class="section2">
             <div class="video-information">
-                <div>
-                    <img class="user-avatar"
-                        src="https://yt3.ggpht.com/a/AGF-l7_W4GO6eEVlLIyiSuGuXCYyT02pTnM_3yvCPg=s88-c-k-c0xffffffff-no-rj-mo"
-                        alt="user-avatar">
+                <div class="top-row">
+                    <div>
+                        <img class="user-avatar"
+                            src="https://yt3.ggpht.com/a/AGF-l7_W4GO6eEVlLIyiSuGuXCYyT02pTnM_3yvCPg=s88-c-k-c0xffffffff-no-rj-mo"
+                            alt="user-avatar">
+                    </div>
+                    <div class="user-name">
+                        <h4>The Odin Project</h4><br>
+                        <p>Publicado el 27 feb. 2014</p>
+                    </div>
+
+                    <div class="suscribe-button">
+                        <button>SUSCRIBIRSE 2,4 MIL</button>
+                    </div>
                 </div>
-                <div class="user-name">
-                    <h4>Lucio Ortiz</h4><br>
-                    <p>Publicado el 23 ago. 2019</p>
-                </div>
-                <div class="suscribe-button">
-                    <button>SUSCRIBIRSE 2,4 MIL</button>
-                </div>
+                <div class="description">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github</div> 
             </div>
     
-            <div class="comments">
-                <p>Aquí van los comentarios</p>
+            <div class="comments-section">
+                <p>13 comentarios</p>
+                <svg class="comments-icon"><g class="style-scope yt-icon">
+                        <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" class="style-scope yt-icon"></path>
+                        <path d="M0 0h24v24H0z" fill="none" class="style-scope yt-icon"></path>
+                      </g></svg>
+                <p>Ordenar por</p>
+                <img class="user-img" alt="" src="https://yt3.ggpht.com/-sWhUdokHTC4/AAAAAAAAAAI/AAAAAAAAAAA/JTl_mLxNhSM/s48-c-k-no-mo-rj-c0xffffff/photo.jpg">
             </div>
         </section>
     </main>
